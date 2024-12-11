@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See what our happy customers have to say about Iron Horse Works. Read reviews and testimonials from real clients.">
+    <meta name="keywords" content="Iron Horse Works reviews, customer testimonials, moving reviews, Adelaide movers">
+    <meta name="author" content="Iron Horse Works">
+    <title>Customer Reviews | Iron Horse Works</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Iron Horse Works Logo">
+            </a>
+            <nav class="desktop-nav main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Navigation -->
+            <button class="hamburger" id="hamburger-menu">&#9776;</button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="rating-summary">
+            <h3>Customer Satisfaction</h3>
+            <p>4.8/5 based on 150 reviews</p>
+        </div>
+        
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p>"The team was incredibly professional and made my house move a breeze. Highly recommend Iron Horse Works!"</p>
+                        <cite>- Sarah J. from Norwood</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"Quick and efficient service! The movers were polite and handled my furniture with care. Will use again."</p>
+                        <cite>- David R. from Glenelg</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"Booking was easy, and the service exceeded my expectations. Moving has never been so stress-free!"</p>
+                        <cite>- Emma L. from Prospect</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"Very professional team. Arrived on time and completed the job efficiently. Highly recommended!"</p>
+                        <cite>- Mark T. from Burnside</cite>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"The movers were friendly and went above and beyond to ensure everything was done perfectly."</p>
+                        <cite>- Jessica H. from Semaphore</cite>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <form class="testimonial-form">
+            <textarea placeholder="Write your review here..."></textarea>
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email">
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </section>
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Iron Horse Works. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true, // Enables infinite loop
+            pagination: {
+                el: '.swiper-pagination', // Pagination bullets
+                clickable: true, // Make pagination bullets clickable
+            },
+            navigation: {
+                nextEl: '.swiper-button-next', // Next button
+                prevEl: '.swiper-button-prev', // Previous button
+            },
+            autoplay: {
+                delay: 5000, // Auto-scroll every 5 seconds
+                disableOnInteraction: false, // Continue autoplay after user interaction
+            },
+        });
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read moving tips, packing guides, and relocation advice from Iron Horse Works.">
+    <meta name="keywords" content="moving tips, packing guides, relocation advice, Iron Horse Works blog">
+    <meta name="author" content="Iron Horse Works">
+    <title>Blog | Iron Horse Works</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Iron Horse Works Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Blog Section -->
+    <main class="blog-section">
+        <div class="container">
+            <h1>Welcome to Our Blog</h1>
+            <p>Read expert tips, guides, and advice for a stress-free moving experience.</p>
+
+            <!-- Search Bar -->
+            <div class="blog-search">
+                <input type="text" id="search-bar" placeholder="Search blog posts...">
+                <button onclick="searchPosts()">Search</button>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="blog-categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="blog.html?category=moving">Moving Tips</a></li>
+                    <li><a href="blog.html?category=packing">Packing Guides</a></li>
+                    <li><a href="blog.html?category=relocation">Relocation Advice</a></li>
+                </ul>
+            </div>
+
+            <!-- Featured Posts Section -->
+            <section class="featured-posts">
+                <h2>Featured Posts</h2>
+                <div class="featured-post">
+                    <img src="images/featured-post.jpg" alt="Featured Post">
+                    <h3><a href="post-featured.html">5 Essential Packing Tips You Need to Know</a></h3>
+                    <p>Discover quick and effective packing strategies for your next move.</p>
+                </div>
+            </section>
+
+            <!-- Blog Posts -->
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <img src="images/moving-tips.jpg" alt="Moving Tips">
+                    <h2><a href="post-moving-tips.html">Top 10 Moving Tips for a Hassle-Free Move</a></h2>
+                    <p>Discover our top tips to ensure your moving day goes as smoothly as possible.</p>
+                    <a href="post-moving-tips.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/packing-guide.jpg" alt="Packing Guide">
+                    <h2><a href="post-packing-guide.html">The Ultimate Packing Guide</a></h2>
+                    <p>Learn how to pack like a pro and keep your belongings safe during transit.</p>
+                    <a href="post-packing-guide.html" class="read-more">Read More</a>
+                </article>
+
+                <article class="blog-post">
+                    <img src="images/moving-checklist.jpg" alt="Moving Checklist">
+                    <h2><a href="post-moving-checklist.html">The Essential Moving Checklist</a></h2>
+                    <p>A step-by-step guide to staying organized on moving day.</p>
+                    <a href="post-moving-checklist.html" class="read-more">Read More</a>
+                </article>
+            </div>
+
+            <!-- Recent Posts Section -->
+            <div class="recent-posts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="post-moving-tips.html">Top 10 Moving Tips for a Hassle-Free Move</a></li>
+                    <li><a href="post-packing-guide.html">The Ultimate Packing Guide</a></li>
+                    <li><a href="post-moving-checklist.html">The Essential Moving Checklist</a></li>
+                </ul>
+            </div>
+
+            <!-- Email Subscription Section -->
+            <div class="email-subscription">
+                <h3>Subscribe to Our Blog</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <a href="#" class="prev">Previous</a>
+                <a href="#" class="page">1</a>
+                <a href="#" class="page">2</a>
+                <a href="#" class="next">Next</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Iron Horse Works. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Blog Search -->
+    <script>
+        function searchPosts() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const posts = document.querySelectorAll('.blog-post');
+            
+            posts.forEach(post => {
+                const title = post.querySelector('h2 a').innerText.toLowerCase();
+                if (title.includes(query)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
